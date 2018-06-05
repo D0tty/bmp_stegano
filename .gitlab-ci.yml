@@ -5,6 +5,7 @@ build:
   before_script:
     - apt update && apt -y install make
   script:
+    - cd c
     - make
   artifacts:
     paths:
@@ -16,4 +17,5 @@ build:
 test:
   stage: test
   script:
+    - cd c
     - make test
