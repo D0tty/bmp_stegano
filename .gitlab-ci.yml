@@ -3,7 +3,7 @@ image: gcc
 build:
   stage: build
   before_script:
-    - apt update && apt -y install make
+    - apt update && apt -y install make diffutils
   script:
     - cd c
     - make
